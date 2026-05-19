@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Yvonne's Voice Dictionary</title>
+<meta name="description" content="A bilingual voice dictionary for English vocabulary learning">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="header">
+    <div class="header__logo">📖🔊</div>
+    <h1 class="header__title">Yvonne's Voice Dictionary</h1>
+    <p class="header__subtitle">Your Voice-Powered English World</p>
+  </header>
+
+  <nav class="nav-tabs">
+    <button class="nav-tab active" data-mode="search" id="tab-search">🔍 Search</button>
+    <button class="nav-tab" data-mode="browse" id="tab-browse">📚 Browse</button>
+  </nav>
+
+  <div class="search-section" id="search-section">
+    <div class="search-box">
+      <span class="search-box__icon">🔍</span>
+      <input type="text" class="search-box__input" id="search-input"
+             placeholder="Type a word... 输入单词" autocomplete="off" autocapitalize="none" spellcheck="false">
+      <button class="search-box__clear" id="search-clear">✕</button>
+    </div>
+  </div>
+
+  <div class="filter-bar" id="filter-bar">
+    <div class="filter-group" id="filter-grades"></div>
+    <div class="filter-group" id="filter-categories"></div>
+  </div>
+
+  <main id="results"></main>
+</div>
+
+<div class="modal-overlay" id="modal-overlay">
+  <button class="modal-close" id="modal-close">✕</button>
+  <div class="modal-content" id="modal-content"></div>
+</div>
+
+<script src="data/vocabulary.js"></script>
+<script src="js/speech.js"></script>
+<script src="js/search.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
