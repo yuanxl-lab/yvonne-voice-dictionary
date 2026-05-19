@@ -848,3 +848,156 @@ body {
     font-size: var(--text-sm);
   }
 }
+
+/* ── Passcode Lock Screen ── */
+.passcode-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s var(--ease-out), transform 0.4s var(--ease-out);
+}
+
+.passcode-screen.unlocked {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.05);
+}
+
+.passcode-container {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 40px rgba(124, 92, 191, 0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 360px;
+  animation: scaleIn 0.5s var(--ease-out);
+}
+
+.passcode-logo {
+  font-size: 3rem;
+  margin-bottom: var(--space-2);
+}
+
+.passcode-title {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: var(--space-1);
+}
+
+.passcode-subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.passcode-dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.passcode-dot {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--primary-light);
+  border-radius: var(--radius-full);
+  transition: all 0.2s ease;
+}
+
+.passcode-dot.filled {
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: scale(1.15);
+}
+
+.passcode-dot.error {
+  background: var(--danger);
+  border-color: var(--danger);
+  animation: shake 0.3s ease;
+}
+
+.passcode-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  justify-items: center;
+  margin: 0 auto var(--space-6) auto;
+  max-width: 280px;
+}
+
+.passcode-key {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--border);
+  background: var(--card-bg);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.passcode-key:active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: scale(0.92);
+}
+
+.passcode-key.empty {
+  border: none;
+  background: transparent;
+  pointer-events: none;
+}
+
+.passcode-key.delete {
+  font-size: var(--text-lg);
+  border-color: transparent;
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.passcode-key.delete:active {
+  background: var(--tag-bg);
+  color: var(--primary);
+  border-color: transparent;
+}
+
+.passcode-error {
+  color: var(--danger);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  opacity: 0;
+  height: 20px;
+  transition: opacity var(--transition-fast);
+  margin-top: var(--space-2);
+}
+
+.passcode-error.visible {
+  opacity: 1;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}

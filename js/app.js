@@ -17,6 +17,14 @@ const App = (() => {
 
   // ── Initialize ──
   async function init() {
+    if (localStorage.getItem('vd_unlocked') === 'true') {
+      _startApp();
+    } else {
+      _setupPasscodeScreen();
+    }
+  }
+
+  async function _startApp() {
     _loadFavorites();
     SpeechEngine.loadSavedSpeed();
 
@@ -32,6 +40,92 @@ const App = (() => {
     if (window.innerWidth > 768) {
       setTimeout(() => $('#search-input')?.focus(), 600);
     }
+  }
+
+  function _setupPasscodeScreen() {
+    const screen = $('#passcode-screen');
+    if (!screen) return;
+    screen.style.display = 'flex';
+
+    let enteredCode = '';
+    const CORRECT_CODE = '791127';
+    const dots = $$('.passcode-dot');
+    const errorEl = $('#passcode-error');
+
+    function updateDots() {
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('filled', idx < enteredCode.length);
+        dot.classList.remove('error');
+      });
+    }
+
+    function triggerError() {
+      errorEl.classList.add('visible');
+      dots.forEach(dot => {
+        dot.classList.add('error');
+      });
+      // Shake animation
+      const container = $('.passcode-container');
+      container.style.animation = 'none';
+      setTimeout(() => {
+        container.style.animation = 'shake 0.4s ease';
+      }, 10);
+
+      setTimeout(() => {
+        enteredCode = '';
+        updateDots();
+      }, 800);
+    }
+
+    function handleKeyPress(val) {
+      errorEl.classList.remove('visible');
+
+      if (val === 'delete') {
+        if (enteredCode.length > 0) {
+          enteredCode = enteredCode.slice(0, -1);
+          updateDots();
+        }
+        return;
+      }
+
+      if (enteredCode.length < 6) {
+        enteredCode += val;
+        updateDots();
+
+        if (enteredCode.length === 6) {
+          if (enteredCode === CORRECT_CODE) {
+            // Unlock!
+            localStorage.setItem('vd_unlocked', 'true');
+            screen.classList.add('unlocked');
+            setTimeout(() => {
+              screen.style.display = 'none';
+              _startApp();
+            }, 400);
+          } else {
+            // Error!
+            setTimeout(triggerError, 100);
+          }
+        }
+      }
+    }
+
+    // Keypad clicks
+    $$('.passcode-key').forEach(key => {
+      key.addEventListener('click', () => {
+        const val = key.dataset.val;
+        if (val) handleKeyPress(val);
+      });
+    });
+
+    // Keyboard support for ease of desktop testing
+    document.addEventListener('keydown', (e) => {
+      if (screen.style.display === 'none') return;
+      if (e.key >= '0' && e.key <= '9') {
+        handleKeyPress(e.key);
+      } else if (e.key === 'Backspace') {
+        handleKeyPress('delete');
+      }
+    });
   }
 
   // ── Bind all events ──

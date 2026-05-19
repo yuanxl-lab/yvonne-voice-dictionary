@@ -42,6 +42,46 @@
   <div class="modal-content" id="modal-content"></div>
 </div>
 
+<div class="passcode-screen" id="passcode-screen" style="display: none;">
+  <div class="passcode-container">
+    <div class="passcode-logo">📖🔒</div>
+    <h2 class="passcode-title">Yvonne's Dictionary</h2>
+    <p class="passcode-subtitle">Enter Passcode to Unlock</p>
+    <div class="passcode-dots">
+      <div class="passcode-dot"></div>
+      <div class="passcode-dot"></div>
+      <div class="passcode-dot"></div>
+      <div class="passcode-dot"></div>
+      <div class="passcode-dot"></div>
+      <div class="passcode-dot"></div>
+    </div>
+    <div class="passcode-keypad">
+      <button class="passcode-key" data-val="1">1</button>
+      <button class="passcode-key" data-val="2">2</button>
+      <button class="passcode-key" data-val="3">3</button>
+      <button class="passcode-key" data-val="4">4</button>
+      <button class="passcode-key" data-val="5">5</button>
+      <button class="passcode-key" data-val="6">6</button>
+      <button class="passcode-key" data-val="7">7</button>
+      <button class="passcode-key" data-val="8">8</button>
+      <button class="passcode-key" data-val="9">9</button>
+      <button class="passcode-key empty"></button>
+      <button class="passcode-key" data-val="0">0</button>
+      <button class="passcode-key delete" data-val="delete">⌫</button>
+    </div>
+    <div class="passcode-error" id="passcode-error">Incorrect passcode. Try again.</div>
+  </div>
+</div>
+
+<script>
+  // Sync check to prevent lock screen flashing if already authenticated
+  if (localStorage.getItem('vd_unlocked') === 'true') {
+    document.getElementById('passcode-screen').style.display = 'none';
+  } else {
+    document.getElementById('passcode-screen').style.display = 'flex';
+  }
+</script>
+
 <script src="data/vocabulary.js"></script>
 <script src="js/speech.js"></script>
 <script src="js/search.js"></script>
