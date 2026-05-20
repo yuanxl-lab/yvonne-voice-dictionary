@@ -237,17 +237,17 @@ voice dictionary/
 ## 6. 已知问题与待办
 
 ### 已确认
-- ✅ 部署方式：先本地使用（双击 HTML 打开），后续需要再部署到线上
+- ✅ 部署方式：部署至 GitHub Pages 并启用免费网页展示服务 (https://yuanxl-lab.github.io/yvonne-voice-dictionary/)，配有密码验证锁防止公开窥探。
 
 ### 待办
-- [x] 词库扩充到 500+ 词（已完成：501 词）
-- [ ] iPad 实机测试（等待用户验证）
-- [ ] 语音播放在 iPad Safari 上的表现验证
+- [x] 词库扩充到 700 词 (已完成：700 词)
+- [x] iPad 实机测试与部署验证 (已通过)
+- [x] 网页访问安全加密机制 (已部署 Passcode)
 
 ### 技术注意事项
 - Web Speech API 的中文语音质量依赖操作系统，iPad Safari 表现最好
-- 词库后续可考虑接入 Free Dictionary API 支持即时查询任意单词
-- 如需更高质量中文发音，可升级到 Google Cloud TTS（需 API 费用）
+- 词库已包含 700 个高频词汇（包含 Grade 3-6，按学科类别分类）
+- 开启密码锁后，使用 `localStorage` 持久化 `vd_unlocked` 状态，确保在 iPad Safari 上只需输入一次密码即可记住授权。
 
 ---
 
@@ -259,3 +259,4 @@ voice dictionary/
 | 2026-05-18 | v1.0 | Phase 1 核心实现完成：UI框架、语音引擎、搜索引擎、200词词库 | Gemini |
 | 2026-05-19 | v1.1 | 词库从 200 词扩充到 501 词（Grade 3: 167, Grade 4: 197, Grade 5: 124, Grade 6: 13） | Gemini |
 | 2026-05-19 | v1.2 | UI 全面英文化（标签/按钮/提示语）；词卡支持多个例句；词库扩充到 700 词 | Gemini |
+| 2026-05-19 | v1.3 | 部署到 GitHub Pages，配置 iPad 桌面 Web App，添加 791127 访问密码锁 | Gemini |
