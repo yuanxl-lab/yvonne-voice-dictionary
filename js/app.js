@@ -179,16 +179,29 @@ const App = (() => {
 
     const searchSection = $('.search-section');
     const filterBar = $('.filter-bar');
+    const resultsArea = $('#results');
+    const storiesSection = $('.stories-section');
+
+    // Reset visibility
+    searchSection.style.display = 'none';
+    filterBar.classList.remove('visible');
+    resultsArea.style.display = 'none';
+    if(storiesSection) storiesSection.style.display = 'none';
 
     if (mode === 'search') {
       searchSection.style.display = '';
-      filterBar.classList.remove('visible');
+      resultsArea.style.display = '';
       _showWelcome();
       setTimeout(() => $('#search-input')?.focus(), 100);
-    } else {
-      searchSection.style.display = 'none';
+    } else if (mode === 'browse') {
       filterBar.classList.add('visible');
+      resultsArea.style.display = '';
       _renderBrowseGrid();
+    } else if (mode === 'stories') {
+      if(storiesSection) {
+        storiesSection.style.display = '';
+        StoriesModule.renderGrid(storiesSection);
+      }
     }
   }
 
@@ -493,7 +506,7 @@ const App = (() => {
     container.appendChild(UI.renderEmptyState('welcome'));
   }
 
-  return { init };
+  return { init, openWordModal: _openModal };
 })();
 
 // ── Boot ──
