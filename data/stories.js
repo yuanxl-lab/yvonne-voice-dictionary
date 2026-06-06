@@ -37,5 +37,358 @@ const STORIES = [
       "After the long speeches, everyone had a huge appetite and rushed to the cafeteria for lunch. The cafeteria workers were very efficient, serving everyone quickly so they had enough time to eat.",
       "At the end of the day, the votes were counted. It was a tie! The principal decided they would be co-presidents and work together to make the school a better place."
     ]
+  },
+  {
+    id: "story-4-explorer",
+    title: "The Little Explorer",
+    level: "Grade 3-4",
+    images: ["assets/story4_img1.png", "assets/story4_img2.png"],
+    vocabulary: ["journey", "absorb", "reflection", "treasure"],
+    content: [
+      "A curious squirrel named Pip started a long journey through the Whispering Woods. He carried a tiny backpack filled with nuts to give him energy. The sun was shining brightly, and the forest felt magical.",
+      "Pip stopped by a calm pond to take a rest. He looked down and saw his own reflection in the clear water. The quiet forest seemed to absorb all the sounds, making everything peaceful and still.",
+      "Suddenly, Pip noticed something sparkling near the edge of the pond. It was a shiny golden acorn! To him, it was the greatest treasure he had ever seen.",
+      "He carefully placed the golden acorn in his backpack and ran home to show his friends. His journey was a big success!"
+    ]
+  },
+  {
+    id: "story-5-garden",
+    title: "Community Garden",
+    level: "Grade 3-4",
+    images: ["assets/story5_img1.png", "assets/story5_img2.png"],
+    vocabulary: ["community", "schedule", "graph", "data"],
+    content: [
+      "The children in town decided to start a community garden. Everyone worked together to plant tomatoes, carrots, and bright yellow sunflowers. It was hard work, but they all smiled and laughed under the warm sun.",
+      "They made a watering schedule to make sure the plants were watered every single day. Some kids watered on Mondays, while others took care of the garden on weekends.",
+      "In their classroom, they created a colorful bar graph to show how fast the plants were growing. They measured the plants every week with a ruler and carefully wrote down the numbers.",
+      "At the end of the month, they looked at the data and cheered. The sunflowers were already taller than the teacher!"
+    ]
+  },
+  {
+    id: "story-6-conflict",
+    title: "The Big Conflict",
+    level: "Grade 3-4",
+    images: ["assets/story6_img1.png", "assets/story6_img2.png"],
+    vocabulary: ["conflict", "resolution", "tradition"],
+    content: [
+      "During recess, Lily and Max had a loud conflict over who got to play with the only yellow toy dinosaur. 'It's mine!' yelled Lily. 'No, I had it first!' argued Max.",
+      "Their teacher came over and asked them to take a deep breath. She explained that shouting wasn't the right way to solve problems. They needed to find a fair way to share.",
+      "The resolution was simple: they would take turns. Lily got to play with it for five minutes, and then she handed it nicely to Max. They ended up playing together and building a sandcastle for the dinosaur.",
+      "To celebrate their teamwork, they started a new tradition. Every Friday, they would trade their favorite toys and play together at the sandbox."
+    ]
+  },
+  {
+    id: "story-7-lincoln",
+    title: "A Book About Lincoln",
+    level: "Grade 3-4",
+    images: ["assets/story7_img1.png", "assets/story7_img2.png"],
+    vocabulary: ["biography", "reliable", "genuine"],
+    content: [
+      "Mia loved visiting the town library. Today, she found a very thick biography about a famous president named Abraham Lincoln. She sat in a cozy blue chair and started to read.",
+      "She learned that Lincoln was a very reliable leader. Even during hard times, people knew they could count on him to make fair and honest decisions for the country.",
+      "One funny detail was that he often kept important letters tucked inside his tall, black hat! He was a genuine and kind person who believed everyone should be treated equally.",
+      "When Mia finished the book, she felt inspired. She wanted to be just as honest and brave as Abraham Lincoln when she grew up."
+    ]
+  },
+  {
+    id: "story-8-space",
+    title: "The Space Adventure",
+    level: "Grade 3-4",
+    images: ["assets/story8_img1.png", "assets/story8_img2.png"],
+    vocabulary: ["constellation", "obstacle", "explore", "discover"],
+    content: [
+      "Leo built a magnificent spaceship out of a big cardboard box. Wearing his winter hat as a helmet, he blasted off into his imagination to explore the dark, starry night.",
+      "Looking out of his spaceship window, he saw a beautiful constellation that looked exactly like a giant flying dragon. He pretended to follow the stars to see where they would lead.",
+      "Suddenly, an asteroid field blocked his path. It was a dangerous obstacle! Leo grabbed the steering wheel and carefully dodged left and right to stay safe.",
+      "He safely landed on a distant purple planet and stepped outside. There, he was amazed to discover a glowing, magical star plant. He knew this was the best space adventure ever!"
+    ]
+  }
+,
+
+  {
+    id: "story-9-rescue",
+    title: "The Rainy Day Rescue",
+    level: "Grade 3-4",
+    images: ["assets/story9_img1.png", "assets/story9_img2.png"],
+    vocabulary: ["rescue", "shelter", "brave", "grateful"],
+    content: [
+      "It was raining heavily when Sam saw a tiny puppy shivering by the road. The poor dog needed a rescue from the cold storm.",
+      "Sam was brave. He took off his jacket, wrapped it around the puppy, and carried it home to provide a warm shelter.",
+      "Once inside, he dried the puppy with a towel and gave it a bowl of food. The puppy wagged its tail, looking very grateful for the help.",
+      "Sam's parents smiled and agreed they could keep the puppy. It was the start of a beautiful friendship."
+    ]
+  },
+  {
+    id: "story-10-magic",
+    title: "The Magic Backpack",
+    level: "Grade 3-4",
+    images: ["assets/story10_img1.png", "assets/story10_img2.png"],
+    vocabulary: ["magic", "discover", "journey", "mysterious"],
+    content: [
+      "While cleaning the attic, Emma found a mysterious old backpack covered in star stickers. When she unzipped it, a soft glowing light poured out.",
+      "She reached inside to discover that it was full of endless books, maps, and tiny sparkling potions. It was full of real magic!",
+      "Every time she pulled out a map, a new adventure would begin. Her first journey took her to a floating island in the clouds.",
+      "Emma realized she didn't need to travel far to explore the universe; she just needed her magical backpack and a bit of imagination."
+    ]
+  },
+  {
+    id: "story-11-museum",
+    title: "A Trip to the Museum",
+    level: "Grade 4-5",
+    images: ["assets/story_treasure.png"],
+    vocabulary: ["museum", "ancient", "exhibit", "fascinating"],
+    content: [
+      "The class went on a field trip to the city museum. As they walked in, they saw a massive dinosaur skeleton standing in the main hall.",
+      "They visited the ancient history exhibit, where they looked at golden masks and old pottery from thousands of years ago.",
+      "The tour guide explained how people used to live without electricity or cars. It was a fascinating look into the past.",
+      "Everyone agreed that learning about history was much more fun when you could actually see it in person."
+    ]
+  },
+  {
+    id: "story-12-bake",
+    title: "The Great Bake Sale",
+    level: "Grade 4-5",
+    images: ["assets/story_election.png"],
+    vocabulary: ["calculate", "profit", "delicious", "customer"],
+    content: [
+      "To raise money for the school library, the fifth graders organized a bake sale. They baked delicious chocolate chip cookies and blueberry muffins.",
+      "During recess, the first customer arrived and bought three cookies. The kids had to quickly calculate the change and hand it back.",
+      "By the end of the day, all the treats were sold out. They counted the money and realized they had made a huge profit for the library.",
+      "The principal was so proud of their hard work and math skills that she let them choose the first new books to buy."
+    ]
+  },
+  {
+    id: "story-13-robot",
+    title: "The Little Helper Robot",
+    level: "Grade 4-5",
+    images: ["assets/story_glacier.png"],
+    vocabulary: ["technology", "program", "efficient", "task"],
+    content: [
+      "Tom loved technology, so he built a small robot to help him clean his room. He had to program it carefully to pick up his toys.",
+      "At first, the robot bumped into the walls and dropped things. But Tom kept fixing the code until it worked perfectly.",
+      "Soon, the robot became very efficient at its job. It could complete the task of sorting legos in just five minutes!",
+      "Tom realized that coding required patience, but it was amazing to see his creation come to life."
+    ]
+  },
+  {
+    id: "story-14-sports",
+    title: "The Championship Game",
+    level: "Grade 4-5",
+    images: ["assets/story_election.png"],
+    vocabulary: ["competition", "strategy", "athlete", "victory"],
+    content: [
+      "It was the final soccer game of the season. The competition was tough, and the opposing team had some very fast athletes.",
+      "During halftime, the coach gathered the team and explained a new strategy. They needed to pass the ball more instead of trying to run it alone.",
+      "In the second half, they worked together flawlessly. With one minute left, Sarah scored the winning goal!",
+      "They celebrated their hard-earned victory with cheers and high-fives, knowing that teamwork was the key to their success."
+    ]
+  },
+  {
+    id: "story-15-ocean",
+    title: "Deep Sea Discovery",
+    level: "Grade 4-5",
+    images: ["assets/story_glacier.png"],
+    vocabulary: ["submarine", "ecosystem", "marine", "pressure"],
+    content: [
+      "A group of scientists boarded a submarine to explore the deepest part of the ocean. The water pressure was immense down there.",
+      "As they turned on their bright lights, they saw a vibrant marine ecosystem full of glowing jellyfish and strange fish with big teeth.",
+      "They took samples and recorded videos to study how these creatures survive in complete darkness.",
+      "It was incredible to realize that Earth still has so many unexplored places waiting to be discovered."
+    ]
+  },
+  {
+    id: "story-16-festival",
+    title: "The Lantern Festival",
+    level: "Grade 4-5",
+    images: ["assets/story_treasure.png"],
+    vocabulary: ["festival", "tradition", "culture", "celebrate"],
+    content: [
+      "Every spring, the town held a beautiful lantern festival. It was an old tradition that brought everyone together to celebrate the end of winter.",
+      "People of all ages dressed in colorful clothes and carried paper lanterns of different shapes and sizes. The air smelled of sweet street food.",
+      "The festival was a great way to share their culture with visitors from other places. Music played late into the night.",
+      "As thousands of lanterns floated up into the dark sky, it looked like a river of stars flowing upward."
+    ]
+  },
+  {
+    id: "story-17-hiking",
+    title: "Lost in the Woods",
+    level: "Grade 4-5",
+    images: ["assets/story_glacier.png"],
+    vocabulary: ["navigate", "compass", "wilderness", "survival"],
+    content: [
+      "During a camping trip, Jack and his father decided to go hiking. They walked deep into the wilderness, enjoying the fresh air and tall pine trees.",
+      "After a few hours, the trail disappeared. They were lost! Thankfully, Jack's dad had brought a map and a compass.",
+      "He taught Jack how to navigate using the sun and the compass needle. It was an important survival skill.",
+      "They eventually found their way back to the camp, feeling tired but proud that they stayed calm and solved the problem."
+    ]
+  },
+  {
+    id: "story-18-concert",
+    title: "The School Concert",
+    level: "Grade 4-5",
+    images: ["assets/story_election.png"],
+    vocabulary: ["instrument", "rehearse", "performance", "nervous"],
+    content: [
+      "Anna had been practicing the violin for a year. Tonight was the big school concert, and she felt incredibly nervous.",
+      "The school band had to rehearse every day after school to make sure every instrument sounded perfect together.",
+      "When the curtain opened, Anna saw her parents smiling in the front row. She took a deep breath and began to play.",
+      "The performance was beautiful. The crowd clapped loudly, and Anna's nervousness completely disappeared, replaced by pure joy."
+    ]
+  },
+  {
+    id: "story-19-volcano",
+    title: "The Sleeping Volcano",
+    level: "Grade 5-6",
+    images: ["assets/story_glacier.png"],
+    vocabulary: ["volcano", "eruption", "geology", "dormant"],
+    content: [
+      "Mount Serene had been a dormant volcano for over five hundred years. Scientists studied its geology to understand its history.",
+      "One week, small earthquakes started shaking the ground. The experts realized an eruption might be coming soon.",
+      "They quickly warned the nearby towns to evacuate just in case. Fortunately, everyone left safely before the mountain blew its top.",
+      "Watching the red lava flow down the slopes from a safe distance was a terrifying but magnificent reminder of nature's power."
+    ]
+  },
+  {
+    id: "story-20-inventor",
+    title: "The Young Inventor",
+    level: "Grade 5-6",
+    images: ["assets/story_election.png"],
+    vocabulary: ["invent", "patent", "innovation", "prototype"],
+    content: [
+      "At just twelve years old, David loved to invent things. His latest idea was a solar-powered backpack that could charge a phone.",
+      "He spent months building a working prototype using wires, small solar panels, and a lot of duct tape.",
+      "After testing it successfully, his science teacher helped him apply for a patent to protect his brilliant innovation.",
+      "David dreamed of starting his own company one day to make eco-friendly gadgets for everyone in the world."
+    ]
+  },
+  {
+    id: "story-21-climate",
+    title: "The Climate Summit",
+    level: "Grade 5-6",
+    images: ["assets/story_glacier.png"],
+    vocabulary: ["climate", "pollution", "sustainable", "global"],
+    content: [
+      "Leaders from all over the world gathered for a global climate summit. They needed to find ways to reduce air and water pollution.",
+      "Young activists also spoke at the event, demanding a more sustainable future for the next generation.",
+      "They discussed planting millions of trees, using wind energy, and reducing plastic waste in the oceans.",
+      "It was a difficult conversation, but everyone agreed that protecting the Earth was the most important job they had."
+    ]
+  },
+  {
+    id: "story-22-archaeology",
+    title: "The Lost City",
+    level: "Grade 5-6",
+    images: ["assets/story_treasure.png"],
+    vocabulary: ["archaeology", "artifact", "civilization", "excavate"],
+    content: [
+      "Deep in the jungle, an archaeology team was trying to excavate the ruins of a forgotten civilization.",
+      "They carefully brushed dirt off stone temples and found a beautiful golden artifact shaped like a jaguar.",
+      "These discoveries helped them understand how the ancient people farmed, traded, and built such amazing structures without modern tools.",
+      "Every piece of pottery and stone carving was like a puzzle piece telling the story of human history."
+    ]
+  },
+  {
+    id: "story-23-economy",
+    title: "The Lemonade Business",
+    level: "Grade 5-6",
+    images: ["assets/story_election.png"],
+    vocabulary: ["economy", "invest", "revenue", "expense"],
+    content: [
+      "During summer break, Maya and Ben started a lemonade stand to learn about how the economy works.",
+      "They had to invest their allowance to buy lemons, sugar, and cups. These were their starting expenses.",
+      "By the end of the week, their revenue was much higher than what they spent. They decided to save half the money and reinvest the rest to buy cookies to sell.",
+      "They quickly learned that running a business required careful planning, good customer service, and smart financial choices."
+    ]
+  },
+  {
+    id: "story-24-biology",
+    title: "The Microscopic World",
+    level: "Grade 5-6",
+    images: ["assets/story_glacier.png"],
+    vocabulary: ["microscope", "bacteria", "cell", "observe"],
+    content: [
+      "In biology class, the students used a powerful microscope to observe a single drop of pond water.",
+      "They were amazed to see tiny living things swimming around. They even saw small bacteria and identified the nucleus of a plant cell.",
+      "The teacher explained that there is an entire invisible world around us that is crucial for life on Earth.",
+      "Looking through the lens completely changed how the students saw the world, making them realize that big things are made of very small parts."
+    ]
+  },
+  {
+    id: "story-25-art",
+    title: "The Masterpiece",
+    level: "Grade 5-6",
+    images: ["assets/story_treasure.png"],
+    vocabulary: ["canvas", "perspective", "gallery", "critic"],
+    content: [
+      "Elena stared at the blank canvas, holding her brush. She wanted to paint a city street using a unique perspective that made the buildings look like they were reaching for the sky.",
+      "She worked for weeks, mixing vibrant colors and adding tiny details to the windows and cars.",
+      "When the painting was finally displayed at the local art gallery, a famous art critic stopped to look at it.",
+      "The critic praised her creative vision, and Elena felt incredibly proud of her hard work and artistic expression."
+    ]
+  },
+  {
+    id: "story-26-astronomy",
+    title: "The Red Planet",
+    level: "Grade 5-6",
+    images: ["assets/story_glacier.png"],
+    vocabulary: ["astronomy", "orbit", "satellite", "gravity"],
+    content: [
+      "Humanity was preparing for its first mission to Mars. In the field of astronomy, this was the biggest event of the century.",
+      "A large satellite was already placed in orbit around the red planet to gather data and send pictures back to Earth.",
+      "The astronauts trained in special pools to get used to the feeling of low gravity they would experience on Mars.",
+      "When the rocket finally launched, millions of people watched the sky, dreaming of the day we would become an interplanetary species."
+    ]
+  },
+  {
+    id: "story-27-politics",
+    title: "The Debate Club",
+    level: "Grade 5-6",
+    images: ["assets/story_election.png"],
+    vocabulary: ["debate", "argument", "evidence", "persuade"],
+    content: [
+      "Join the debate club, they said! Mark was nervous as he stood behind the podium to deliver his opening statement.",
+      "His topic was whether schools should ban homework. He had to construct a strong argument and back it up with solid evidence from research studies.",
+      "His goal was to persuade the judges that students needed more free time to explore hobbies and rest their minds.",
+      "Although his opponent made good points, Mark spoke clearly and confidently, proving that learning how to argue respectfully is a valuable skill."
+    ]
+  },
+  {
+    id: "story-28-genetics",
+    title: "The Family Tree",
+    level: "Grade 5-6",
+    images: ["assets/story_treasure.png"],
+    vocabulary: ["genetics", "inherit", "trait", "generation"],
+    content: [
+      "While learning about genetics, Sophia noticed that she and her grandmother both had the exact same curly red hair.",
+      "The teacher explained that we inherit certain physical traits from our parents and grandparents through DNA.",
+      "Sophia created a detailed family tree to trace how the red hair was passed down from generation to generation.",
+      "It made her feel deeply connected to her ancestors, knowing that a tiny part of them lived on inside of her."
+    ]
+  },
+  {
+    id: "story-29-literature",
+    title: "The Epic Poem",
+    level: "Grade 5-6",
+    images: ["assets/story_treasure.png"],
+    vocabulary: ["literature", "metaphor", "author", "publish"],
+    content: [
+      "For her English project, Chloe wrote a long, epic poem about a dragon guarding a library. She loved reading classic literature and wanted to be a famous author.",
+      "She used a clever metaphor to compare the dragon's fiery breath to the burning passion for knowledge.",
+      "Her teacher was so impressed that she encouraged Chloe to submit the poem to a children's magazine to get it published.",
+      "Seeing her name printed in the magazine a few months later was the happiest day of her life."
+    ]
+  },
+  {
+    id: "story-30-future",
+    title: "City of Tomorrow",
+    level: "Grade 5-6",
+    images: ["assets/story_glacier.png"],
+    vocabulary: ["future", "transportation", "architecture", "society"],
+    content: [
+      "In the year 2150, the city looked completely different. The architecture featured tall, glass towers covered in vertical gardens to clean the air.",
+      "Transportation was entirely silent and eco-friendly. People traveled in flying pods that ran on magnetic tracks above the streets.",
+      "Society had learned to balance technology with nature, ensuring that parks and wildlife were preserved right in the middle of the busy city.",
+      "It was a peaceful and advanced world, showing what humanity could achieve when they worked together to protect the planet."
+    ]
   }
 ];

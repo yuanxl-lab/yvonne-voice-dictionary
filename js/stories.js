@@ -15,8 +15,9 @@ const StoriesModule = (() => {
     STORIES.forEach(story => {
       const card = document.createElement('div');
       card.className = 'story-card';
+      const coverImg = story.images && story.images.length > 0 ? story.images[0] : (story.image || '');
       card.innerHTML = `
-        <img class="story-card__img" src="${UI.escapeAttr(story.image)}" alt="${UI.escapeAttr(story.title)}">
+        <img class="story-card__img" src="${UI.escapeAttr(coverImg)}" alt="${UI.escapeAttr(story.title)}">
         <div class="story-card__content">
           <div class="story-card__level">${UI.escapeHtml(story.level)}</div>
           <div class="story-card__title">${UI.escapeHtml(story.title)}</div>
@@ -72,14 +73,30 @@ const StoriesModule = (() => {
       return highlighted;
     };
 
+    // Build content with multiple images interleaved
+    const coverImg = story.images && story.images.length > 0 ? story.images[0] : (story.image || '');
+    
+    let paragraphsHtml = '';
+    story.content.forEach((p, i) => {
+      paragraphsHtml += `<p class="story-paragraph" id="story-p-${i}">${highlightVocab(p)}</p>`;
+      // Interleave additional images every 2-3 paragraphs if available
+      if (story.images && story.images.length > 1) {
+        // e.g. put the 2nd image after 2nd paragraph, 3rd after 4th
+        const imgIndex = Math.floor((i + 1) / 2);
+        if ((i + 1) % 2 === 0 && imgIndex < story.images.length) {
+          paragraphsHtml += `<img class="story-reader__img-inline" src="${UI.escapeAttr(story.images[imgIndex])}" alt="Illustration" style="width:100%; border-radius:12px; margin: 20px 0; box-shadow: var(--shadow-sm);">`;
+        }
+      }
+    });
+
     content.innerHTML = `
-      <img class="story-reader__img" src="${UI.escapeAttr(story.image)}" alt="${UI.escapeAttr(story.title)}">
+      <img class="story-reader__img" src="${UI.escapeAttr(coverImg)}" alt="${UI.escapeAttr(story.title)}">
       <h2 class="story-reader__title">${UI.escapeHtml(story.title)}</h2>
       <div class="story-reader__controls">
         <button class="speak-btn speak-btn--large" id="story-btn-read">🔊 Read Story</button>
       </div>
       <div class="story-reader__text" id="story-text-container">
-        ${story.content.map((p, i) => `<p class="story-paragraph" id="story-p-${i}">${highlightVocab(p)}</p>`).join('')}
+        ${paragraphsHtml}
       </div>
     `;
 
