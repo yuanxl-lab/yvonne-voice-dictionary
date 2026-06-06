@@ -66,10 +66,21 @@ const StoriesModule = (() => {
       let highlighted = text;
       // Sort by length descending to avoid partial matches
       const sortedVocab = [...story.vocabulary].sort((a,b) => b.length - a.length);
+      const placeholders = [];
+      
       sortedVocab.forEach(word => {
         const regex = new RegExp(`\\b(${word}s?|${word}ed|${word}ing)\\b`, 'gi');
-        highlighted = highlighted.replace(regex, `<span class="story-vocab-word" data-word="${word}">$1</span>`);
+        highlighted = highlighted.replace(regex, (match) => {
+          placeholders.push(`<span class="story-vocab-word" data-word="${word}">${match}</span>`);
+          return `__VOCAB_${placeholders.length - 1}__`;
+        });
       });
+      
+      placeholders.forEach((html, index) => {
+        const regex = new RegExp(`__VOCAB_${index}__`, 'g');
+        highlighted = highlighted.replace(regex, html);
+      });
+      
       return highlighted;
     };
 
