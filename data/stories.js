@@ -390,5 +390,105 @@ const STORIES = [
       "Society had learned to balance technology with nature, ensuring that parks and wildlife were preserved right in the middle of the busy city.",
       "It was a peaceful and advanced world, showing what humanity could achieve when they worked together to protect the planet."
     ]
+  },
+  {
+    "id": 31,
+    "title": "Backyard Stargazing",
+    "level": "Grade 3",
+    "image": "assets/story31.jpg",
+    "vocabulary": [
+      "astronomy",
+      "telescope",
+      "constellation",
+      "backyard",
+      "meteor"
+    ],
+    "content": [
+      "Tom and his sister loved <span data-word=\"astronomy\">astronomy</span>. They wanted to learn everything about the stars and planets.",
+      "One summer night, they set up a large <span data-word=\"telescope\">telescope</span> in their <span data-word=\"backyard\">backyard</span>.",
+      "Tom looked through the lens and found a beautiful <span data-word=\"constellation\">constellation</span> shaped like a hunter.",
+      "Suddenly, a bright light flashed across the dark sky.",
+      "\"Look, a <span data-word=\"meteor\">meteor</span>!\" shouted his sister. They stayed outside for hours, amazed by the universe."
+    ]
+  },
+  {
+    "id": 32,
+    "title": "The Pet Detective Agency",
+    "level": "Grade 3-4",
+    "image": "assets/story32.jpg",
+    "vocabulary": [
+      "detective",
+      "clue",
+      "suspect",
+      "investigate",
+      "analyze"
+    ],
+    "content": [
+      "Sarah wanted to be a famous <span data-word=\"detective\">detective</span>. She even started her own agency to find lost pets.",
+      "When Mrs. Brown's cat went missing, Sarah decided to <span data-word=\"investigate\">investigate</span> the case.",
+      "She found a small <span data-word=\"clue\">clue</span> near the fence: a piece of red yarn.",
+      "Sarah sat down to <span data-word=\"analyze\">analyze</span> the evidence carefully.",
+      "The main <span data-word=\"suspect\">suspect</span> was the neighbor's playful puppy, who loved chasing yarn!"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "The Renewable Energy Fair",
+    "level": "Grade 4",
+    "image": "assets/story33.jpg",
+    "vocabulary": [
+      "renewable",
+      "solar",
+      "turbine",
+      "logical",
+      "evaluate"
+    ],
+    "content": [
+      "The school was hosting a science fair about <span data-word=\"renewable\">renewable</span> energy.",
+      "David decided to build a model of a <span data-word=\"solar\">solar</span> powered car for his project.",
+      "His friend Emma built a small wind <span data-word=\"turbine\">turbine</span> that could light up a bulb.",
+      "It was <span data-word=\"logical\">logical</span> to use clean energy to protect our environment.",
+      "The judges walked around to <span data-word=\"evaluate\">evaluate</span> the projects, and they were very impressed!"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Diary of an Ancient Explorer",
+    "level": "Grade 4-5",
+    "image": "assets/story34.jpg",
+    "vocabulary": [
+      "expedition",
+      "ancient",
+      "artifact",
+      "evidence",
+      "analyze"
+    ],
+    "content": [
+      "Professor Jones led an exciting <span data-word=\"expedition\">expedition</span> deep into the jungle.",
+      "They were searching for the ruins of an <span data-word=\"ancient\">ancient</span> city that had been lost for centuries.",
+      "After weeks of digging, they finally found a golden <span data-word=\"artifact\">artifact</span> buried in the dirt.",
+      "This was the first piece of <span data-word=\"evidence\">evidence</span> that the city really existed.",
+      "The team returned to the lab to <span data-word=\"analyze\">analyze</span> their amazing discovery."
+    ]
+  },
+  {
+    "id": 35,
+    "title": "First Day in Zero Gravity",
+    "level": "Grade 5",
+    "image": "assets/story35.jpg",
+    "vocabulary": [
+      "satellite",
+      "meteor",
+      "logical",
+      "evaluate",
+      "telescope"
+    ],
+    "content": [
+      "Captain Leo looked out the window of his spaceship. He could see a shiny communication <span data-word=\"satellite\">satellite</span> orbiting the Earth.",
+      "Using the ship's powerful <span data-word=\"telescope\">telescope</span>, he watched a distant <span data-word=\"meteor\">meteor</span> shower.",
+      "Living in zero gravity meant he had to <span data-word=\"evaluate\">evaluate</span> every movement he made.",
+      "It was <span data-word=\"logical\">logical</span> to move slowly so he wouldn't bump into the walls.",
+      "Leo smiled as he floated across the room. His first day in space was a great success."
+    ]
   }
 ];
