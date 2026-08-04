@@ -490,5 +490,205 @@ const STORIES = [
       "It was <span data-word=\"logical\">logical</span> to move slowly so he wouldn't bump into the walls.",
       "Leo smiled as he floated across the room. His first day in space was a great success."
     ]
+  },
+  {
+    "id": 36,
+    "title": "Time Travel to the Dinosaurs",
+    "level": "Grade 3-4",
+    "image": "assets/story36.jpg",
+    "vocabulary": [
+      "fossil",
+      "skeleton",
+      "survive",
+      "species",
+      "observe"
+    ],
+    "content": [
+      "Timmy stepped into his time machine and pushed the green button. He wanted to <span data-word=\"observe\">observe</span> the dinosaurs.",
+      "When he landed, he saw a giant T-Rex <span data-word=\"skeleton\">skeleton</span> that wasn't a bone yet—it was alive!",
+      "He wondered how this amazing <span data-word=\"species\">species</span> could <span data-word=\"survive\">survive</span> in such a wild jungle.",
+      "Timmy took a photo of the giant creature before jumping back into the machine.",
+      "When he returned home, he held a small <span data-word=\"fossil\">fossil</span> he had found, proving his trip was real."
+    ]
+  },
+  {
+    "id": 37,
+    "title": "The Deep Sea Submarine",
+    "level": "Grade 4-5",
+    "image": "assets/story37.jpg",
+    "vocabulary": [
+      "ecosystem",
+      "explore",
+      "discover",
+      "measure",
+      "gravity"
+    ],
+    "content": [
+      "The crew got into the yellow submarine to <span data-word=\"explore\">explore</span> the bottom of the ocean.",
+      "Deep underwater, they felt less <span data-word=\"gravity\">gravity</span> and floated like astronauts.",
+      "They were amazed to <span data-word=\"discover\">discover</span> a glowing coral reef full of strange fish.",
+      "This underwater <span data-word=\"ecosystem\">ecosystem</span> was totally different from anything on land.",
+      "The scientists used special tools to <span data-word=\"measure\">measure</span> the temperature of the water."
+    ]
+  },
+  {
+    "id": 38,
+    "title": "The Microscopic World",
+    "level": "Grade 4",
+    "image": "assets/story38.jpg",
+    "vocabulary": [
+      "microscope",
+      "cell",
+      "bacteria",
+      "organism",
+      "evaluate"
+    ],
+    "content": [
+      "In science class, Lily looked through the <span data-word=\"microscope\">microscope</span> at a drop of pond water.",
+      "She saw a tiny green <span data-word=\"organism\">organism</span> swimming around quickly.",
+      "Her teacher explained that it was a single <span data-word=\"cell\">cell</span> that lived in the water.",
+      "Lily also learned that not all <span data-word=\"bacteria\">bacteria</span> are bad; some help plants grow.",
+      "She had to <span data-word=\"evaluate\">evaluate</span> her findings and write a report for homework."
+    ]
+  },
+  {
+    "id": 39,
+    "title": "The Robot Friend Competition",
+    "level": "Grade 5",
+    "image": "assets/story39.jpg",
+    "vocabulary": [
+      "robotics",
+      "programming",
+      "algorithm",
+      "sensor",
+      "invention"
+    ],
+    "content": [
+      "Leo was the smartest kid in the school's <span data-word=\"robotics\">robotics</span> club.",
+      "He spent weeks learning computer <span data-word=\"programming\">programming</span> to make his robot talk.",
+      "He wrote a complex <span data-word=\"algorithm\">algorithm</span> so the robot could understand jokes.",
+      "The robot used a camera <span data-word=\"sensor\">sensor</span> to see Leo's face and smile back.",
+      "At the competition, everyone clapped for Leo's amazing <span data-word=\"invention\">invention</span>."
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Climbing the Snowy Peak",
+    "level": "Grade 4-5",
+    "image": "assets/story40.jpg",
+    "vocabulary": [
+      "glacier",
+      "avalanche",
+      "courageous",
+      "equipment",
+      "protect"
+    ],
+    "content": [
+      "A team of <span data-word=\"courageous\">courageous</span> climbers set out to reach the top of the snowy mountain.",
+      "They had to wear special <span data-word=\"equipment\">equipment</span> to stay warm in the freezing cold.",
+      "Carefully, they walked across a massive <span data-word=\"glacier\">glacier</span> that looked like a river of ice.",
+      "Suddenly, they heard a loud rumble—an <span data-word=\"avalanche\">avalanche</span> was starting above them!",
+      "They quickly hid behind a large rock to <span data-word=\"protect\">protect</span> themselves from the falling snow."
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Secret of the Magic Library",
+    "level": "Grade 4",
+    "image": "assets/story41.jpg",
+    "vocabulary": [
+      "confident",
+      "curious",
+      "predict",
+      "database",
+      "network"
+    ],
+    "content": [
+      "Mia was a <span data-word=\"curious\">curious</span> girl who loved reading old books in the town library.",
+      "She found a magical computer connected to a secret <span data-word=\"network\">network</span> of wizards.",
+      "The computer had a giant <span data-word=\"database\">database</span> holding every spell ever created.",
+      "Mia felt <span data-word=\"confident\">confident</span> she could learn a spell to make her toys fly.",
+      "She tried to <span data-word=\"predict\">predict</span> what would happen when she waved her wand, but the books flew instead!"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Oasis in the Desert",
+    "level": "Grade 4",
+    "image": "assets/story42.jpg",
+    "vocabulary": [
+      "drought",
+      "survive",
+      "canteen",
+      "shelter",
+      "compass"
+    ],
+    "content": [
+      "The desert was experiencing a terrible <span data-word=\"drought\">drought</span>, and the sun was very hot.",
+      "The traveler used his <span data-word=\"compass\">compass</span> to make sure he was walking north.",
+      "He only had a little water left in his metal <span data-word=\"canteen\">canteen</span> to <span data-word=\"survive\">survive</span> the journey.",
+      "Just before sunset, he found a group of palm trees and built a <span data-word=\"shelter\">shelter</span> for the night.",
+      "He was so happy to find a hidden oasis with fresh, cool water."
+    ]
+  },
+  {
+    "id": 43,
+    "title": "The School Concert",
+    "level": "Grade 4",
+    "image": "assets/story43.jpg",
+    "vocabulary": [
+      "symphony",
+      "audience",
+      "generous",
+      "anxious",
+      "patient"
+    ],
+    "content": [
+      "The music club practiced hard to play a beautiful <span data-word=\"symphony\">symphony</span> for the school.",
+      "Before the show, Sam felt very <span data-word=\"anxious\">anxious</span> and his hands were shaking.",
+      "His teacher was <span data-word=\"patient\">patient</span> and told him to take a deep breath.",
+      "When they finished playing, the <span data-word=\"audience\">audience</span> clapped and cheered loudly.",
+      "A <span data-word=\"generous\">generous</span> parent even bought pizza for all the kids in the band."
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Chemistry in the Kitchen",
+    "level": "Grade 3-4",
+    "image": "assets/story44.jpg",
+    "vocabulary": [
+      "recipe",
+      "ingredient",
+      "evaporate",
+      "calculate",
+      "measure"
+    ],
+    "content": [
+      "Max wanted to bake a cake, so he looked up a <span data-word=\"recipe\">recipe</span> online.",
+      "He had to carefully <span data-word=\"measure\">measure</span> the flour, sugar, and milk.",
+      "Chocolate chips were his favorite secret <span data-word=\"ingredient\">ingredient</span>.",
+      "He tried to <span data-word=\"calculate\">calculate</span> how long it would take to bake in the oven.",
+      "As it baked, the water inside began to <span data-word=\"evaporate\">evaporate</span>, making the cake fluffy and soft."
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Night at the Art Museum",
+    "level": "Grade 4-5",
+    "image": "assets/story45.jpg",
+    "vocabulary": [
+      "exhibition",
+      "sculpture",
+      "masterpiece",
+      "gallery",
+      "polite"
+    ],
+    "content": [
+      "The museum was hosting a special night <span data-word=\"exhibition\">exhibition</span> for students.",
+      "In the main <span data-word=\"gallery\">gallery</span>, they saw a famous painting by a great artist.",
+      "Next to it stood a beautiful marble <span data-word=\"sculpture\">sculpture</span> of a horse.",
+      "The guide told them this artwork was considered a true <span data-word=\"masterpiece\">masterpiece</span>.",
+      "The students were very <span data-word=\"polite\">polite</span> and whispered quietly as they admired the art."
+    ]
   }
 ];
